@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bursary-Online | Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery-2.2.0.js"></script>
+        
+        <link rel="icon" href="education.ico" type="image/x-icon"/>
+        <script src="js/bootstrap.min.js"></script>
+        <style>
+
+
+
+            nav{
+                margin-left: 20%;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p><a href=index.php>Bursary-Online</a></p>
+                    <p>financial support to needy students</p>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <input type="search" placeholder="Enter Keyword">
+                        <button class="btn btn-info">
+                            <span class="glyphicon glyphicon-search"></span>
+                            search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+             <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav nav-pills">
+
+                    <li><a class="active" href="index.php">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Application
+                            <span class="caret"></span> 
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="application.html">Apply now</a></li>
+                            <li><a href="status.php">Check Status</a></li>
+                        </ul>
+
+                    </li>
+                    <li ><a href="#">Donate</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" style="float: right; ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Area Administrator</a></li>
+                            <li><a href="institutionLogin.php">Institution Verification</a></li>
+                            <li><a href="staff_portal.php">Staff portal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+       
+        <ul class="breadcrumb">
+            <li>You are here  <span class="glyphicon glyphicon-arrow-right"></span></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="application.html">Application</a></li>
+            
+            <li class="active">Apply Now</li>        
+        </ul>
+        <div class="container" style="min-height: 500px;">
+            <h2>Applications</h2>
+            <p>This page shows the applications available. The type of application imply the source of finance</p> 
+            <p>The finances are not available throughout and therefore one can only apply the ongoing 
+                application(s).</p>
+            <p>Take note of the rules, guidelines and deadline spelt out in each application</p>
+            <div class="table-responsive">          
+                <table class="table">
+                    <thead>
+                        <tr>
+
+                            <th>Application type</th>
+                            <th>Status</th>
+                            <th>Target</th>
+                            <th>Deadline</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td><a href="cdf_form.php">Constituency Development fund (CDF</a>)</td>
+                            <td>ongoing</td>
+                            <td>All students</td>
+                            <td id="deadline"><script >
+                                var d = new Date(2016, 3, 24);
+                                document.getElementById("deadline").innerHTML = d.toDateString();
+                                </script></td>
+
+                        </tr>
+                        <tr>
+
+                            <td>Ministry Of Education(MoE)</td>
+                            <td>ongoing</td>
+                            <td>All students</td>
+                            <td id="lastday"><script >
+                                var d = new Date();
+                                document.getElementById("lastday").innerHTML = d.toDateString();
+                                </script></td>
+
+                        </tr>
+                        <tr>
+
+                            <td>Orphans and Vulnerable Children (OVC)</td>
+                            <td>closed</td>
+                            <td>OVC only</td>
+                            <td></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="alert-danger">
+                    Giving false information is a serious criminal offence.
+                </p>    
+
+            </div>
+        </div>
+        <footer>
+            <div class="container" style="background-color:  #080808;bottom:0%; width: 100%;height: 100%">
+                <div class="col-md-4">Copyright &COPY; <a href="index.php">Bursary-Online</a></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-5">
+                    <p>Designed by: Alaro Hezron</p>
+                    <p>NetGram Softwares</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
